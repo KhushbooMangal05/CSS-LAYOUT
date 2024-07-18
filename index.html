@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+</head>
+<style>
+    *{
+        background-color: black;
+    }
+    main{
+        text-align:center;
+        color:white;
+       }
+    main h5{
+        letter-spacing: 5px;
+    }   
+    main h1{
+        letter-spacing: 10px;
+        font-weight: bolder;
+        font-size:50px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns:1fr 1fr 2fr 1fr 1fr;
+        /* gap:10px; */
+    }
+    .container div{
+     margin: 10px;
+    padding: 40px;
+    }
+    .div1{
+        grid-column:2/4;
+        grid-row:1/3;
+        background-color:rgb(238, 170, 193);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div2{
+        grid-column: 3/4;
+        grid-row: 3/5;
+        background-color: rgb(174, 83, 113);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div3{
+        grid-column: 4/6;
+        grid-row:1/2;
+        background-color: rgb(145, 180, 215);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div4{
+        grid-column: 4/6;
+        grid-row:2/3;
+        background-color: rgb(145, 180, 215);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div5{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: rgb(250, 174, 199);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div6{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: rgb(133, 78, 96);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div7{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: rgb(212, 170, 184);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div8{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: rgb(116, 37, 63);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div9{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background-color: rgb(114, 54, 83);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div10{
+        grid-column: 2/3;
+        grid-row:4/5;
+        background-color: rgb(142, 92, 108);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div11{
+        grid-column:4/5;
+        grid-row: 3/4;
+        background-color: rgb(155, 186, 195);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div12{
+        grid-column:5/6;
+        grid-row: 3/4;
+        background-color: rgb(243, 217, 225);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div13{
+        grid-column:4/5;
+        grid-row:4/5;
+        background-color: rgb(242, 142, 177);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .div14{
+        grid-column: 5/6;
+        grid-row: 4/5;
+        background-color: rgb(145, 71, 95);
+        border-radius: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <main>
+        <h1>CSS GRID LAYOUT</h1>
+        <h5>
+            WITH @ SUPPORT FLEXBOX FALL BACK
+        </h5>
+    </main>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+        <div class="div9">9</div>
+        <div class="div10">10</div>
+        <div class="div11">11</div>
+        <div class="div12">12</div>
+        <div class="div13">13</div>
+        <div class="div14">14</div>
+    </div>
+</body>
+</html>
